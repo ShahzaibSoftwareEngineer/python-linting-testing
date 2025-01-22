@@ -4,6 +4,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install .flake8
 
 CMD ["python", "-m", "unittest", "discover", "-s", "tests", "-p", "test_*.py"]
+
