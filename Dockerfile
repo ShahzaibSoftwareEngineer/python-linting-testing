@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN pip install .flake8
+RUN pip install flake8
 
 CMD ["python", "-m", "unittest", "discover", "-s", "tests", "-p", "test_*.py"]
 
